@@ -1,0 +1,31 @@
+footer{
+  width: 100%;
+  border-top: 1px solid grey;
+  height: 200px;
+  display: flex;
+  padding: 20px;
+
+}
+  /* background-color: red;
+} */
+
+.icon{
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;  
+  border-bottom: 1px solid white;
+ 
+ 
+}
+
+.icon-name{
+  border-top: 1px solid white;
+  padding-top: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.portfolio-icon-container{
+  margin-right: 30px;
+  text-align: center;
+}

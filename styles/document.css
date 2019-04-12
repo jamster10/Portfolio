@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  color: white;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+main, body{
+  min-width:320px;
+}
+
+body{
+  background-color:rgb(35,37,62);
+  max-width: 1400px;
+}
+
+
+
+

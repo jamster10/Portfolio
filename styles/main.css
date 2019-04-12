@@ -1,0 +1,39 @@
+main{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 95px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+h3{
+  margin-bottom: 15px;
+}
+
+.fact-list{
+  list-style-type: circle;
+  border-left: 1px solid white;
+}
+
+.fact-item{
+  padding: 5px 0px;
+  margin-left: -18px;
+}
+
+@media (min-width:700px){
+    /* main{
+    flex-flow: nowrap;
+  } */
+  section{
+    width: 50%;
+  }
+  .info-left{
+    padding-right:20px;
+  }
+}
+  
