@@ -6,30 +6,59 @@ const PortfolioHolder = (function (){
       gif: 'img/landing-optimized.gif',
       picture: 'img/Landing.png',
       title: 'Landing Page',
-      info: 'A fake company home page. A green, and simple focus.'
+      info: 'A fake company home page. A green, and simple focus.',
+      id: 'landing-project',
+      tools:['html', 'css', 'js']
+      
     },
     {
       gif: 'img/Bookmark.gif',
       picture: 'img/Bookmarks.png',
       title: 'Bookmark Manager',
-      info: 'A place to create, manage, and rate your bookmarks.'
+      info: 'A place to create, manage, and rate your bookmarks.',
+      id: 'bookmark-project',
+      tools:['html', 'css', 'js']
+    },
+    {
+      gif: 'img/Markdown.gif',
+      picture: 'img/Markdown.png',
+      title: 'Markdown Previewer',
+      info: 'Practice and Preview Markdown syntax.',
+      id: 'markdown-project',
+      tools:['html', 'css', 'js', 'react'],
     }
   ];
 
+  const logos =
+    {
+      css: 'img/icons/css.svg',
+      html: 'img/icons/html.svg',
+      js: 'img/icons/js.svg',
+      mongo: 'img/icons/mongo.svg',
+      react: 'img/icons/react.svg',
+    };
+
+  const getLogos=(arr)=>{
+    let logosHTML = arr.map(item =>{
+      return `<img class='logo-img' src=${logos[item]} alt = 'logo for ${item}'>`;
+    });
+    return logosHTML.join(' ');
+  };  
+
   const getIcons =()=>{
-    let iconsHTML = portfolioStore.map(item=>{
-      return `<div class="portfolio-icon-container">
+    let iconsHTML = portfolioStore.map(item => {
+      return `<a class="icon-links"href='#'><div class="portfolio-icon-container" id=${item.id} >
         <img class="icon" src="${item.picture}" alt="${item.title} icon"></img>
         <h5 class="icon-name">${item.title}</h5>
-      </div>`;
+      </div></a>`;
     });
     return iconsHTML.join('');
-
   };
 
   return {
     portfolioStore,
     getIcons,
+    getLogos,
   };
 
 }());

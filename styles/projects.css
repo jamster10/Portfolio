@@ -1,0 +1,26 @@
+.project-container{
+  width:100%;
+
+}
+
+.project-vid{
+  width: 100%;
+}
+
+.portfolio-right{
+  margin-left:-15px;
+  margin-right:-15px;
+}
+
+.portfolio-left{
+  padding-right: 12px;
+  padding-left: 30px;
+}
+
+.lib-logo-container{
+  z-index: 2;
+  margin-top: -65px;
+  padding-right: 5px; 
+  text-align: right;
+}
+

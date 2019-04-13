@@ -1,7 +1,6 @@
 'use strict';
 /*global State, PortfolioHolder*/
 
-console.log('up and running');
 
 document.querySelector('.menu-button').onclick =(e)=>{
   e.stopPropagation();
@@ -11,7 +10,7 @@ document.querySelector('.menu-button').onclick =(e)=>{
 document.querySelector('.name').onclick =(e)=>{
   e.stopPropagation();
   State.controller.pageView = 1;
-  State.controller.selectedProject = null;
+  State.removeSelection();
   State.renderPage();
 };
 
@@ -19,12 +18,31 @@ document.querySelector('#contact-me').onclick =(e)=>{
 
   e.stopPropagation();
   State.controller.pageView = 2;
-  State.controller.selectedProject = null;
+  State.removeSelection();
   State.renderPage();
 };
 
+document.querySelector('#about-me').onclick =(e)=>{
+
+  e.stopPropagation();
+  State.controller.pageView = 4;
+  State.removeSelection();
+  State.renderPage();
+};
+
+
+document.querySelector('footer').onclick =(e)=>{
+
+  e.stopPropagation(); 
+  let selected = event.target.closest('.portfolio-icon-container');
+  if(!selected || selected === State.selectedProject) return;
+  State.controller.pageView = 3; 
+  State.selectProject(selected);
+  State.renderPage();
+  document.querySelector('.lib-logo-container').innerHTML = State.renderLogos();
+};
+
 (function init (){
-  console.log(PortfolioHolder);
   document.querySelector('.portfolio-container').innerHTML = PortfolioHolder.getIcons();
   State.renderPage();
 }() );

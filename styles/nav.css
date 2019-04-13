@@ -7,11 +7,21 @@ nav{
     text-decoration: none;
     cursor: pointer;
   }
+
   .name{
     margin-top: 5px;
     margin-left: 35px;
     height: 50px;
-  
+  }
+
+  .portfolio-button{
+    font-size: 25px;
+    padding:7px 15px;
+    left: 0px;
+    top: 500px;
+    background-color:black;
+    border: 1px solid yellow;
+    position: fixed
   }
   .first-name{
     border-bottom: 2px solid yellow;
@@ -98,8 +108,8 @@ nav{
     }
   }
   
-  /* @media (min-width: 1400px){
+  @media (min-width: 1400px){
     .nav-links{
-      left: 1100px;
+      left: 980px;
     }
-  } */
+  }

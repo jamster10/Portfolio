@@ -1,0 +1,48 @@
+.me-container{
+  margin:auto;
+  text-align: left;
+}
+
+.myself{
+  width:150px;
+  float: left;
+  padding: 10px;
+  padding-top: 3px;
+}
+.about-text{
+  line-height: 22px;
+  display: none;
+}
+.about-left{
+  margin-top: -50px;
+}
+
+.about-small-text{
+  line-height: 21px;
+}
+
+@media (min-width:700px){
+  .me-container{
+    margin:auto;
+    text-align: center;
+  }  
+  .myself{
+     width: 250px;
+     float: none;
+     padding: 0px;
+  }
+  .about-left, .about-right{
+    margin-top: -38px;
+    max-width:550px;
+  }
+  .about-small-text{
+    display: none;
+  }
+  .about-text{
+    display:inline;
+    text-align:left;
+  }
+  .about-right{
+    max-width:550px;
+  }
+}

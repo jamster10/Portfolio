@@ -1,11 +1,29 @@
 'use strict';
-/*global ViewGenerator */
+/*global ViewGenerator, PortfolioHolder */
 
 const State = (function(){
   let controller = {
     showMenu: false,
     pageView: 1,
     selectedProject: null
+  };
+
+  const selectProject=(newProject)=>{
+    removeSelection();
+    newProject.classList.add('selected-project');
+    State.controller.selectedProject = newProject.id;
+  };
+
+  const removeSelection=()=>{
+    let preSelected =document.querySelector(`#${State.controller.selectedProject}`);
+    if (preSelected) preSelected.classList.remove('selected-project');
+  };
+
+  const findProject=()=> PortfolioHolder.portfolioStore.find(item => item.id === State.controller.selectedProject);
+
+  const renderLogos=()=>{
+    const selected = findProject();
+    return PortfolioHolder.getLogos(selected.tools);
   };
 
   const toggleMenu=()=> {
@@ -19,13 +37,14 @@ const State = (function(){
   };
 
   const renderPage=()=>{
-    console.log(State.controller.pageView);
     switch (controller.pageView){
     case 1:  ViewGenerator.homePage();
       break;
     case 2:  ViewGenerator.contactPage();
       break;
-    case 3:  ViewGenerator.portfolioPage();
+    case 3:  ViewGenerator.portfolioPage(findProject());
+      break;
+    case 4:  ViewGenerator.aboutPage();
       break;
     }
   };
@@ -34,5 +53,8 @@ const State = (function(){
     controller,
     toggleMenu,
     renderPage,
+    selectProject,
+    removeSelection,
+    renderLogos,
   };
 }() );

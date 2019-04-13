@@ -10,8 +10,10 @@ const ViewGenerator = ( function(){
     firstContainer.classList.add('info-left');
 
     let leftHTMLString = 
-    `<h2>Hey There!</h2>
-     <p>I'm a full stack web developer located near Austin, Tx, and am excited to meet you!</p>`;
+    `<div class= "welcome-text">
+    <h2>Hey There!</h2>
+     <p>I'm a full stack web developer located near Austin, Tx, and am excited to meet you!</p>
+     </div>`;
 
 
     let rightHTMLString =
@@ -63,21 +65,37 @@ const ViewGenerator = ( function(){
     generatePage(leftHTMLString, rightHTMLString);
   };
 
+  const aboutPage=()=>  {
+    resetCSS();
+    firstContainer.classList.add('about-left');
+    secondContainer.classList.add('about-right');
+
+    let leftHTMLString = 
+    `<div class="me-container"><img class="myself" src="img/portfolio_picture.jpg" alt="A picture of myself"><p class="about-small-text">It started with a problem- <i>I'm lazy</i>. Why should I do a repetitive task when my efforts can be better utilized elsewhere?<br><br>
+    At my previous job I was a developer, but not for the web. We researched resources for our clients, and created and used diagnostics to better measure and understand how to help them improve. It was a tutoring firm, handling the data of thousands of students throughout Texas, yet some of our processes were archaic. Upon recognizing this, I took it upon myself to find a better way. I spent my evenings at home learning the ins and outs of JavaScript. Many frustrating late nights, and roadblocks, culminated in me presenting my company with a better way to analyze our students that they still use to this day. This spurred my hunger and excitement to become a professional programmer, which is where I am today.</p></div>`;
+
+    let rightHTMLString =
+    ` <p class="about-text">It started with a problem- <i>I'm lazy</i>. Why should I do a repetitive task when my efforts can be better utilized elsewhere?<br><br>
+    At my previous job I was a developer, but not for the web. We researched resources for our clients, and created and used diagnostics to better measure and understand how to help them improve. It was a tutoring firm, handling the data of thousands of students throughout Texas, yet some of our processes were archaic. Upon recognizing this, I took it upon myself to find a better way. I spent my evenings at home learning the ins and outs of JavaScript. Many frustrating late nights, and roadblocks, culminated in me presenting my company with a better way to analyze our students that they still use to this day. This spurred my hunger and excitement to become a professional programmer, which is where I am today.</p>
+    `;
+  
+    generatePage(leftHTMLString, rightHTMLString);
+  };
+
   const portfolioPage=(selection)=>  {
-    const selected = PortfolioHolder.portfolioStore[selection];
     resetCSS();
     firstContainer.classList.add('portfolio-left');
     secondContainer.classList.add('portfolio-right');
 
     let leftHTMLString = 
-    `<h2>${selected.title}</h2>
-     <h3>${selected.info}</h3>`;
+    `<h2>${selection.title}</h2>
+     <h3>${selection.info}</h3>`;
 
     let rightHTMLString =
     `<div class ="project-container">
-        <img class="project-vid" src="${selected.gif}" alt="gif of project">
+        <img class="project-vid" src="${selection.gif}" alt="gif of project">
         <div class= "lib-logo-container"></div>
-     </div>`  ;
+     </div>`;
   
     generatePage(leftHTMLString, rightHTMLString);
   };
@@ -96,6 +114,7 @@ const ViewGenerator = ( function(){
     homePage,
     contactPage,
     portfolioPage,
+    aboutPage,
   };
 
 }() );

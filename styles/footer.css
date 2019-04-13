@@ -4,7 +4,7 @@ footer{
   height: 200px;
   display: flex;
   padding: 20px;
-
+  justify-content: space-around
 }
   /* background-color: red;
 } */
@@ -14,18 +14,31 @@ footer{
   border-radius: 50%;
   height: 100px;  
   border-bottom: 1px solid white;
- 
- 
 }
 
 .icon-name{
-  border-top: 1px solid white;
+
+  border-top: 2px solid white;
   padding-top: 15px;
   margin-top: 15px;
   text-align: center;
 }
 
+.icon-links:hover .icon-name{
+  border-top: 2px solid yellow;
+}
+
 .portfolio-icon-container{
-  margin-right: 30px;
   text-align: center;
 }
+
+.icon-links{
+  text-decoration: none;
+}
+
+.selected-project .icon-name{
+  border-top: 2px solid yellow;
+}
+
+
+
