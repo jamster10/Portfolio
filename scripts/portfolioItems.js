@@ -8,7 +8,9 @@ const PortfolioHolder = (function (){
       title: 'Landing Page',
       info: 'A fake company home page. A green, and simple focus.',
       id: 'landing-project',
-      tools:['html', 'css', 'js']
+      tools:['html', 'css', 'js'],
+      url: 'https://jamster10.github.io/landing-page/',
+      repo: 'https://github.com/jamster10/landing-page'
       
     },
     {
@@ -17,7 +19,9 @@ const PortfolioHolder = (function (){
       title: 'Bookmark Manager',
       info: 'A place to create, manage, and rate your bookmarks.',
       id: 'bookmark-project',
-      tools:['html', 'css', 'js']
+      tools:['html', 'css', 'js'],
+      url: 'https://thinkful-ei-cheetah.github.io/Kristof-Pierre-Bookmark-Project/',
+      repo: 'https://github.com/thinkful-ei-cheetah/Kristof-Pierre-Bookmark-Project'
     },
     {
       gif: 'img/Markdown.gif',
@@ -26,6 +30,8 @@ const PortfolioHolder = (function (){
       info: 'Practice and Preview Markdown syntax.',
       id: 'markdown-project',
       tools:['html', 'css', 'js', 'react'],
+      url: '',
+      repo: ''
     }
   ];
 

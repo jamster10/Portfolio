@@ -43,7 +43,7 @@ const ViewGenerator = ( function(){
       <br>
       <input type="text" required name="anon-name" id="anon-name" placeholder="Name Namington">
       <br>
-      <label for="email">Email</label>
+      <label for="anon-email">Email</label>
       <br>
       <input type="email" required name="anon-email" id="anon-email">
       <br>
@@ -89,7 +89,11 @@ const ViewGenerator = ( function(){
 
     let leftHTMLString = 
     `<h2>${selection.title}</h2>
-     <h3>${selection.info}</h3>`;
+     <h3>${selection.info}</h3>
+     <a href='${selection.url}'>Visit Site</a>
+     <a href='${selection.repo}'>Visit Repo</a>
+
+     `;
 
     let rightHTMLString =
     `<div class ="project-container">
