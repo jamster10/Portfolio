@@ -36,6 +36,15 @@ const State = (function(){
     }
   };
 
+  const portfolioSelect=(event)=>{
+    let selected = event.target.closest('.portfolio-icon-container');
+    if(!selected || selected === State.selectedProject) return;
+    State.controller.pageView = 3; 
+    State.selectProject(selected);
+    State.renderPage();
+    document.querySelector('.lib-logo-container').innerHTML = State.renderLogos();
+  };
+
   const renderPage=()=>{
     switch (controller.pageView){
     case 1:  ViewGenerator.homePage();
@@ -56,5 +65,6 @@ const State = (function(){
     selectProject,
     removeSelection,
     renderLogos,
+    portfolioSelect
   };
 }() );

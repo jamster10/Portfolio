@@ -34,13 +34,10 @@ document.querySelector('#about-me').onclick =(e)=>{
 document.querySelector('footer').onclick =(e)=>{
 
   e.stopPropagation(); 
-  let selected = event.target.closest('.portfolio-icon-container');
-  if(!selected || selected === State.selectedProject) return;
-  State.controller.pageView = 3; 
-  State.selectProject(selected);
-  State.renderPage();
-  document.querySelector('.lib-logo-container').innerHTML = State.renderLogos();
+  State.portfolioSelect(e);
 };
+
+document.querySelector('footer').onkeyup=(e)=> State.portfolioSelect(e);
 
 (function init (){
   document.querySelector('.portfolio-container').innerHTML = PortfolioHolder.getIcons();

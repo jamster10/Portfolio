@@ -2,7 +2,9 @@
   box-sizing: border-box;
   margin: 0px;
   color: white;
-  font-family: Tahoma, Geneva, sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
+  font-family: 'Raleway', sans-serif;
+  /* font-family: Tahoma, Geneva, sans-serif; */
 }
 
 main, body{
