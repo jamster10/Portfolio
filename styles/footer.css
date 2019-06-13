@@ -42,3 +42,21 @@ footer{
 
 
 
+@media screen and (max-width: 500px){
+  .icon{
+    width: 70px;
+    height: 70px;  
+
+  }
+  
+  .icon-name{
+    font-size: 14px;
+    border-top: 2px solid white;
+    padding-top: 15px;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .portfolio-icon-container{
+    margin: 8px;
+  }
+}

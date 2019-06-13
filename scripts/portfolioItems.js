@@ -24,6 +24,17 @@ const PortfolioHolder = (function (){
       repo: 'https://github.com/thinkful-ei-cheetah/Kristof-Pierre-Bookmark-Project'
     },
     {
+      gif: 'img/DogGo.gif',
+      picture: 'img/doggo.png',
+      title: 'DogGo!',
+      info: 'Find a dog-friendly route for you and your best bud.',
+      id: 'doggo-project',
+      tools:['react', 'node', 'express', 'postgresql', 'heroku', 'js'],
+      url: 'https://dog-go.netlify.com',
+      repo: 'https://github.com/jamster10/doggo-client',
+      backendRepo: 'https://github.com/jamster10/doggo-client'
+    },
+    {
       gif: 'img/Markdown.gif',
       picture: 'img/Markdown.png',
       title: 'Markdown Previewer',
@@ -42,6 +53,10 @@ const PortfolioHolder = (function (){
       js: 'img/icons/js.svg',
       mongo: 'img/icons/mongo.svg',
       react: 'img/icons/react.svg',
+      heroku: 'img/icons/heroku.svg',
+      express: 'img/icons/express.svg',
+      postgresql: 'img/icons/postgresql.svg',
+      node: 'img/icons/node.svg'
     };
 
   const getLogos=(arr)=>{
