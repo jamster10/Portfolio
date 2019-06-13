@@ -3,6 +3,27 @@
 const PortfolioHolder = (function (){
   const portfolioStore=[
     {
+      gif: 'img/DogGo.gif',
+      picture: 'img/doggo.png',
+      title: 'DogGo!',
+      info: 'Find a dog-friendly route for you and your best bud.',
+      id: 'doggo-project',
+      tools:['react', 'node', 'express', 'postgresql', 'heroku', 'js'],
+      url: 'https://dog-go.netlify.com',
+      repo: 'https://github.com/jamster10/doggo-client',
+      backendRepo: 'https://github.com/jamster10/doggo-client'
+    },
+    {
+      gif: 'img/Markdown.gif',
+      picture: 'img/Markdown.png',
+      title: 'Markdown Previewer',
+      info: 'Practice and Preview Markdown syntax.',
+      id: 'markdown-project',
+      tools:['html', 'css', 'js', 'react'],
+      url: '',
+      repo: ''
+    },
+    {
       gif: 'img/landing-optimized.gif',
       picture: 'img/Landing.png',
       title: 'Landing Page',
@@ -23,27 +44,6 @@ const PortfolioHolder = (function (){
       url: 'https://thinkful-ei-cheetah.github.io/Kristof-Pierre-Bookmark-Project/',
       repo: 'https://github.com/thinkful-ei-cheetah/Kristof-Pierre-Bookmark-Project'
     },
-    {
-      gif: 'img/DogGo.gif',
-      picture: 'img/doggo.png',
-      title: 'DogGo!',
-      info: 'Find a dog-friendly route for you and your best bud.',
-      id: 'doggo-project',
-      tools:['react', 'node', 'express', 'postgresql', 'heroku', 'js'],
-      url: 'https://dog-go.netlify.com',
-      repo: 'https://github.com/jamster10/doggo-client',
-      backendRepo: 'https://github.com/jamster10/doggo-client'
-    },
-    {
-      gif: 'img/Markdown.gif',
-      picture: 'img/Markdown.png',
-      title: 'Markdown Previewer',
-      info: 'Practice and Preview Markdown syntax.',
-      id: 'markdown-project',
-      tools:['html', 'css', 'js', 'react'],
-      url: '',
-      repo: ''
-    }
   ];
 
   const logos =

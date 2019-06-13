@@ -21,6 +21,14 @@
   line-height: 21px;
 }
 
+
+@media (min-width:700px){
+  .about-text{
+    margin:auto;
+    text-align: center;
+    font-size: 16px;
+  }  
+
 @media (min-width:700px){
   .me-container{
     margin:auto;
