@@ -6,12 +6,22 @@ const PortfolioHolder = (function (){
       gif: 'img/DogGo.gif',
       picture: 'img/doggo.png',
       title: 'DogGo!',
-      info: 'Find a dog-friendly route for you and your best bud. Login to save your route for later.',
+      info: 'Find a dog-friendly route for you and your best bud. Login to save your route for later. (Mobile under development)',
       id: 'doggo-project',
       tools:['react', 'node', 'express', 'postgresql', 'heroku', 'js'],
       url: 'https://dog-go.netlify.com',
       repo: 'https://github.com/jamster10/doggo-client',
       backendRepo: 'https://github.com/jamster10/doggo-client'
+    },
+    {
+      gif: 'img/Laconic-gif.gif',
+      picture: 'img/Laconic.png',
+      title: 'Laconic',
+      info: 'Manage, and A/B test your Youtube thumbnail videos to increase your click-through-rate. (Still under development)',
+      id: 'laconic-project',
+      tools:['react', 'node', 'express', 'postgresql', 'heroku', 'js'],
+      url: 'https://laconic.now.sh/',
+      repo: 'https://github.com/thinkful-ei-cheetah/capstone3-client-GOATful'
     },
     {
       gif: 'img/Markdown.gif',
@@ -33,17 +43,18 @@ const PortfolioHolder = (function (){
       url: 'https://jamster10.github.io/landing-page/',
       repo: 'https://github.com/jamster10/landing-page'
       
-    },
-    {
-      gif: 'img/Bookmark.gif',
-      picture: 'img/Bookmarks.png',
-      title: 'Bookmark Manager',
-      info: 'A place to create, manage, and rate your bookmarks.',
-      id: 'bookmark-project',
-      tools:['html', 'css', 'js'],
-      url: 'https://thinkful-ei-cheetah.github.io/Kristof-Pierre-Bookmark-Project/',
-      repo: 'https://github.com/thinkful-ei-cheetah/Kristof-Pierre-Bookmark-Project'
-    },
+    }
+   
+    // {
+    //   gif: 'img/Bookmark.gif',
+    //   picture: 'img/Bookmarks.png',
+    //   title: 'Bookmark Manager',
+    //   info: 'A place to create, manage, and rate your bookmarks.',
+    //   id: 'bookmark-project',
+    //   tools:['html', 'css', 'js'],
+    //   url: 'https://thinkful-ei-cheetah.github.io/Kristof-Pierre-Bookmark-Project/',
+    //   repo: 'https://github.com/thinkful-ei-cheetah/Kristof-Pierre-Bookmark-Project'
+    // },
   ];
 
   const logos =

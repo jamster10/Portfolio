@@ -67,6 +67,9 @@ const State = (function(){
   };
 
   const portfolioSelect=(event)=>{
+    if (State.controller.showPanel === true){
+      State.togglePanel();
+    }
     let selected = event.target.closest('.portfolio-icon-container');
     if(!selected || selected === State.selectedProject) return;
     State.controller.pageView = 3; 
