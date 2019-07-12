@@ -12,6 +12,7 @@
 .about-text{
   line-height: 22px;
   display: none;
+  font-size: 0.9em;
 }
 .about-left{
   margin-top: -50px;
@@ -22,14 +23,21 @@
 }
 
 
+@media (min-width:500px){
+  .about-text{
+    margin:auto;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+
 @media (min-width:700px){
   .about-text{
     margin:auto;
     text-align: center;
     font-size: 16px;
-  }  
+  }
 
-@media (min-width:700px){
   .me-container{
     margin:auto;
     text-align: center;

@@ -27,6 +27,7 @@ h3{
 .fact-item{
   padding: 5px 0px;
   margin-left: -18px;
+  font-size: 1em;
 }
 
 @media (min-width:700px){
@@ -40,4 +41,6 @@ h3{
     padding-right:20px;
   }
 }
+
+
   

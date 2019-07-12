@@ -14,13 +14,16 @@ const State = (function(){
     controller.showPanel = !controller.showPanel;
     const overPanel = document.querySelector('.over-panel');
     const panelBtn = document.querySelector('.button-holder');
+    const icons = document.querySelectorAll('.icon');
 
     if (controller.showPanel){
       overPanel.classList.add('show-panel');
       panelBtn.classList.add('move-btn');
+      icons.forEach(icon => icon.classList.add('color-test'));
     } else {
       overPanel.classList.remove('show-panel');
       panelBtn.classList.remove('move-btn');
+      icons.forEach(icon => icon.classList.remove('color-test'));
     }
   };
 
