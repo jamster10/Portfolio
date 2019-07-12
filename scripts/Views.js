@@ -1,5 +1,7 @@
 'use strict';
+
 /*global PortfolioHolder*/
+
 
 const ViewGenerator = ( function(){
   let firstContainer = document.querySelector('.left-top');
@@ -13,6 +15,8 @@ const ViewGenerator = ( function(){
     `<div class= "welcome-text">
     <h2>Hey There!</h2>
      <p>I'm a full stack web developer located near Austin, Tx, and am excited to meet you!</p>
+     <br>
+     <p>Drop me a line: </p>
      </div>`;
 
 
@@ -33,27 +37,14 @@ const ViewGenerator = ( function(){
 
   const contactPage=()=>  {
     resetCSS();
-    firstContainer.classList.add('contact-left');
-    secondContainer.classList.add('contact-right');
+    firstContainer.classList.add('portfolio-left');
+    secondContainer.classList.add('con-right');
 
     let leftHTMLString = 
-    `<form class="message-form" role="form">
-      <h3 class="form-heading">Send me a message</h3>
-      <label for="anon-name">Name</label>
-      <br>
-      <input type="text" required name="anon-name" id="anon-name" placeholder="Name Namington">
-      <br>
-      <label for="anon-email">Email</label>
-      <br>
-      <input type="email" required name="anon-email" id="anon-email">
-      <br>
-      <label for="anon-message">Message</label>
-      <br>
-      <textarea maxlength="250" required name="anon-message" id="anon-message" rows="5" cols="25"></textarea>
-      <br><br>
-      <button type="button" class="message-btn">Send</button>
-      <br>
-    </form>`
+    `<div>
+      <iframe src="https://resume.creddle.io/embed/e5itbn56xtr"
+      width="850" height="1100" seamless></iframe> 
+    </div>`
      ;
 
     let rightHTMLString =

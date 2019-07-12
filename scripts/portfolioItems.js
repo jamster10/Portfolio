@@ -6,7 +6,7 @@ const PortfolioHolder = (function (){
       gif: 'img/DogGo.gif',
       picture: 'img/doggo.png',
       title: 'DogGo!',
-      info: 'Find a dog-friendly route for you and your best bud.',
+      info: 'Find a dog-friendly route for you and your best bud. Login to save your route for later.',
       id: 'doggo-project',
       tools:['react', 'node', 'express', 'postgresql', 'heroku', 'js'],
       url: 'https://dog-go.netlify.com',

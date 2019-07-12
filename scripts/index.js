@@ -1,12 +1,13 @@
 'use strict';
 /*global State, PortfolioHolder*/
 
-
+//Toggle menu button. Exists only on mobile.
 document.querySelector('.menu-button').onclick =(e)=>{
   e.stopPropagation();
   State.toggleMenu();
 };
 
+//Allow navigation to home page when user clicks on my name
 document.querySelector('.name').onclick =(e)=>{
   e.stopPropagation();
   State.controller.pageView = 1;
@@ -14,14 +15,16 @@ document.querySelector('.name').onclick =(e)=>{
   State.renderPage();
 };
 
-document.querySelector('#contact-me').onclick =(e)=>{
+//<<Deleted function as I removed my contact me page
+// document.querySelector('#my-resume').onclick =(e)=>{
 
-  e.stopPropagation();
-  State.controller.pageView = 2;
-  State.removeSelection();
-  State.renderPage();
-};
+//   e.stopPropagation();
+//   State.controller.pageView = 2;
+//   State.removeSelection();
+//   State.renderPage();
+// };
 
+//Allow users to access about me page
 document.querySelector('#about-me').onclick =(e)=>{
 
   e.stopPropagation();
@@ -30,15 +33,24 @@ document.querySelector('#about-me').onclick =(e)=>{
   State.renderPage();
 };
 
+//Unnesscary function maybe?
+// document.querySelector('').onclick =(e)=>{
+//   console.log('I am clicked')
+//   e.stopPropagation();
+//   State.controller.pageView = 4;
+//   State.removeSelection();
+//   State.renderPage();
+// };
 
+//Determine which portfolio item is clicked
 document.querySelector('footer').onclick =(e)=>{
-
   e.stopPropagation(); 
   State.portfolioSelect(e);
 };
-
+//Allow access to portfolio using keyboard
 document.querySelector('footer').onkeyup=(e)=> State.portfolioSelect(e);
 
+//Initialize it all, Render the portfolio section, and grab the correct icons.
 (function init (){
   document.querySelector('.portfolio-container').innerHTML = PortfolioHolder.getIcons();
   State.renderPage();

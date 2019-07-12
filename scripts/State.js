@@ -5,8 +5,14 @@ const State = (function(){
   let controller = {
     showMenu: false,
     pageView: 1,
-    selectedProject: null
+    selectedProject: null,
+    showOverview: false
   };
+
+  //Control to toggle black overlay
+  const showOverlay = () => {
+    
+  }
 
   const selectProject=(newProject)=>{
     removeSelection();
@@ -15,7 +21,7 @@ const State = (function(){
   };
 
   const removeSelection=()=>{
-    let preSelected =document.querySelector(`#${State.controller.selectedProject}`);
+    let preSelected = document.querySelector(`#${State.controller.selectedProject}`);
     if (preSelected) preSelected.classList.remove('selected-project');
   };
 
