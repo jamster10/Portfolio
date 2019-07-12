@@ -59,7 +59,7 @@ document.querySelector('footer').onkeyup=(e)=> State.portfolioSelect(e);
 (function init (){
   document.querySelector('.portfolio-container').innerHTML = PortfolioHolder.getIcons();
   State.renderPage();
-  State.togglePanel(); 
+  
 }() );
   
 
