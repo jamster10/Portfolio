@@ -16,7 +16,7 @@ const ViewGenerator = ( function(){
     <h2>Hey There!</h2>
      <p>I'm a full stack web developer located near Austin, Tx, and am excited to meet you!</p>
      <br>
-     <p>Drop me a line: <a href = "mailto: kristofpierre8@gmail.com">via email</a>, or <a href="tel:5403081284">phone</a></p>
+     <p>Drop me a line: via<a href = "mailto: kpac.ja@gmail.com">email: kpac.ja@gmail.com</a>, or <a href="tel:5403081284">phone: 540-308-1284</a></p>
      </div>`
 
 
