@@ -58,8 +58,9 @@ document.querySelector('footer').onkeyup=(e)=> State.portfolioSelect(e);
 //Initialize it all, Render the portfolio section, and grab the correct icons.
 (function init (){
   document.querySelector('.portfolio-container').innerHTML = PortfolioHolder.getIcons();
+  State.enableTransitions();
   State.renderPage();
-  setTimeout(() =>State.togglePanel(), 500); 
+  setTimeout(() =>State.shouldShowPanel(), 700); 
 }() );
   
 

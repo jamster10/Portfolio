@@ -1,5 +1,5 @@
 'use strict';
-/*global ViewGenerator, PortfolioHolder */
+/*global ViewGenerator, PortfolioHolder, SessionControls */
 
 const State = (function(){
   let controller = {
@@ -24,17 +24,20 @@ const State = (function(){
     }
   };
 
+  //Control to show current project is selected
   const selectProject=(newProject)=>{
     removeSelection();
     newProject.classList.add('selected-project');
     State.controller.selectedProject = newProject.id;
   };
 
+  //controls to remove any past selected project
   const removeSelection=()=>{
     let preSelected = document.querySelector(`#${State.controller.selectedProject}`);
     if (preSelected) preSelected.classList.remove('selected-project');
   };
 
+  //controls to find projects
   const findProject=()=> PortfolioHolder.portfolioStore.find(item => item.id === State.controller.selectedProject);
 
   const renderLogos=()=>{
@@ -42,6 +45,7 @@ const State = (function(){
     return PortfolioHolder.getLogos(selected.tools);
   };
 
+  //toogle menu if screen size is right width
   const toggleMenu=()=> {
     controller.showMenu = !controller.showMenu;
     const options = document.querySelector('.nav-links');
@@ -50,6 +54,13 @@ const State = (function(){
     } else {
       options.classList.remove('show-menu');
     }
+  };
+
+
+  //Enable CSS transitions after page load properly
+  const enableTransitions=()=>{
+    let body = document.querySelector(`body`);
+    body.classList.remove('preload');
   };
 
   const portfolioSelect=(event)=>{
@@ -61,12 +72,22 @@ const State = (function(){
     document.querySelector('.lib-logo-container').innerHTML = State.renderLogos();
   };
 
+  //Determine whether to show panel on visit
+  const shouldShowPanel = () =>{
+    const shouldShow = SessionControls.checkToken();
+    if (shouldShow){
+      State.togglePanel();
+      SessionControls.addToken(); 
+    }
+  };
+
+  //decide which view to show a user
   const renderPage=()=>{
     switch (controller.pageView){
     case 1:  ViewGenerator.homePage();
       break;
-    case 2:  ViewGenerator.contactPage();
-      break;
+    // case 2:  ViewGenerator.contactPage();
+    //   break; //removed contact page in favour of resume
     case 3:  ViewGenerator.portfolioPage(findProject());
       break;
     case 4:  ViewGenerator.aboutPage();
@@ -76,7 +97,9 @@ const State = (function(){
 
   return {
     controller,
+    enableTransitions,
     togglePanel,
+    shouldShowPanel,
     toggleMenu,
     renderPage,
     selectProject,
