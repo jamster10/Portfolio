@@ -16,8 +16,8 @@ const ViewGenerator = ( function(){
     <h2>Hey There!</h2>
      <p>I'm a full stack web developer located near Austin, Tx, and am excited to meet you!</p>
      <br>
-     <p>Drop me a line: </p>
-     </div>`;
+     <p>Drop me a line: <a href = "mailto: kristofpierre8@gmail.com">via Email</a></p>
+     </div>`
 
 
     let rightHTMLString =
