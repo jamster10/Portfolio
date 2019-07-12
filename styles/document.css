@@ -17,26 +17,60 @@ body{
   margin: auto;
 }
 
+
+/* Everything below is for the overlay panel */
 .over-panel{
-  left:0px;
-  top: -10px;
-  background-color: rgba(0,0,0,.8);
+  left: 0px; 
   position: fixed;
   width: 100%;
-  height: 0%;
-  z-index:10;
-  /* display: flex; */
-  padding-top:50%;
-  transition: top 2s;
-
-  text-align:center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  height: 550px;
+  margin-top: -550px;
+  background-color: transparent;
+  z-index: -1;
+  transition: margin-top 2s, z-index 2s, background-color 2s;
 }
 
-.slide-in{
-  height: 80px;
+.over-panel-text{
+  width: 300px;
+  margin: auto;
+  text-align:center;
+}
+
+i{
+  margin: 0px;
+  color: yellow;
+}
+
+#panel-btn{
+  top: 0px;
+  position: relative;
+  transition: top 5s;
+}
+.show-panel{
+  z-index: 2;
+  background-color: rgba(0,0,0,.8);
+  margin-top: 0px;
+}
+.button-holder{
+  width: 30px;
+  position: absolute;
+  left: 200px;
+  margin-top: 5px;
+  transform: rotateX(0);
+  transition: margin-top 2s, transform 2s;
+  background-color:transparent;
+  z-index: 3;
+
+}
+
+.button-holder > button{
+  background-color: transparent;
+  border: none;
+}
+
+.move-btn{
+  margin-top: 500px;
+  transform: rotateX(3.142rad);
 }
 
 .welcome-over{
@@ -48,8 +82,26 @@ body{
 }
 
 @media (min-width: 500px){
-  .over-panel{
-    height: 66%;
-    padding-top:30%;
+  .button-holder{
+    left: 400px;
   }
+
+  .over-panel-text{
+    margin-top: 200px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 700px){
+  .button-holder{
+    left: 0;
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .over-panel-text{
+    margin-top: 200px;
+    width: 600px;
+  }
+
 }

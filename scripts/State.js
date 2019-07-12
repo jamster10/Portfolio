@@ -6,13 +6,23 @@ const State = (function(){
     showMenu: false,
     pageView: 1,
     selectedProject: null,
-    showOverview: false
+    showPanel: false
   };
 
   //Control to toggle black overlay
-  const showOverlay = () => {
-    
-  }
+  const togglePanel = () => {
+    controller.showPanel = !controller.showPanel;
+    const overPanel = document.querySelector('.over-panel');
+    const panelBtn = document.querySelector('.button-holder');
+
+    if (controller.showPanel){
+      overPanel.classList.add('show-panel');
+      panelBtn.classList.add('move-btn');
+    } else {
+      overPanel.classList.remove('show-panel');
+      panelBtn.classList.remove('move-btn');
+    }
+  };
 
   const selectProject=(newProject)=>{
     removeSelection();
@@ -66,6 +76,7 @@ const State = (function(){
 
   return {
     controller,
+    togglePanel,
     toggleMenu,
     renderPage,
     selectProject,

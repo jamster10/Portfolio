@@ -7,6 +7,11 @@ document.querySelector('.menu-button').onclick =(e)=>{
   State.toggleMenu();
 };
 
+document.querySelector('#panel-btn').onclick = (e) => {
+  e.stopPropagation();
+  State.togglePanel(); 
+}
+
 //Allow navigation to home page when user clicks on my name
 document.querySelector('.name').onclick =(e)=>{
   e.stopPropagation();
@@ -54,6 +59,7 @@ document.querySelector('footer').onkeyup=(e)=> State.portfolioSelect(e);
 (function init (){
   document.querySelector('.portfolio-container').innerHTML = PortfolioHolder.getIcons();
   State.renderPage();
+  State.togglePanel(); 
 }() );
   
 
