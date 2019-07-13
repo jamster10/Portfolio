@@ -31,14 +31,16 @@ body{
 }
 
 .over-panel-text{
-  width: 300px;
+  width: 400px;
   margin: auto;
   text-align:center;
+  margin-top: 200px;
 }
 
 i{
   margin: 0px;
   color: yellow;
+  z-index: 6;
 }
 
 #panel-btn{
@@ -59,7 +61,7 @@ i{
   transform: rotateX(0);
   transition: margin-top 2s, transform 2s;
   background-color:transparent;
-  z-index: 3;
+  z-index: 5;
 
 }
 
@@ -92,7 +94,15 @@ i{
   }
 }
 
-@media (min-width: 700px){
+@media (max-width: 500px){
+  .button-holder{
+    left: 240px;
+
+  }
+}
+
+
+@media (min-width: 999px){
   .button-holder{
     left: 0;
     right: 0; 

@@ -36,7 +36,7 @@ nav{
     right: 10px;
     top: 60px;
     padding: 0px;
-    padding-right: 10px;
+    padding-right: 0px;
     border-right: 1px solid whitesmoke;
     transform: translate(0, -50vh);
     transition: transform .5s ease-in-out;
@@ -90,7 +90,7 @@ nav{
   }
   
   
-  @media (min-width: 820px){
+  @media (min-width: 890px){
     .nav-links{
       float: right;
       top: 20px;
@@ -110,6 +110,10 @@ nav{
   
   @media (min-width: 1400px){
     .nav-links{
-      left: 980px;
+      position: relative;
+      right: unset;
+      top: -40px;
+      left: 0px;
+      width: 450px;
     }
   }
