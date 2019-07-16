@@ -30,8 +30,8 @@ const PortfolioHolder = (function (){
       info: 'Practice and Preview Markdown syntax.',
       id: 'markdown-project',
       tools:['html', 'css', 'js', 'react'],
-      url: '',
-      repo: ''
+      url: 'https://codepen.io/jamster1/pen/zMxzaL',
+      repo: 'https://codepen.io/jamster1/pen/zMxzaL'
     },
     {
       gif: 'img/landing-optimized.gif',
