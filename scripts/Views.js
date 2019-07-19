@@ -24,10 +24,10 @@ const ViewGenerator = ( function(){
      `<h3>Interesting facts about myself:</h3>
      
      <ul class ="fact-list">
-      <li class ="fact-item"><p>I'm a massive Liverpool fan!</p></li>
-      <li class ="fact-item"><p>I love to camp, cook, and crack open a beer- especially in that order.</p></li>
-      <li class ="fact-item"><p>I once represented Jamaica in an international Chess tournament.</p></li>
-      <li class ="fact-item"><p>I designed and created an app using JS that my previous employer now uses to analyze their data and clients.</p></li>
+     <li class ="fact-item"><p>I designed and created an app using JS that my previous employer now uses to analyze their data and clients.</p></li>
+     <li class ="fact-item"><p>I once represented Jamaica in an international Chess tournament.</p></li>
+     <li class ="fact-item"><p>I love to camp, cook, and crack open a beer- especially in that order.</p></li>
+     <li class ="fact-item"><p>I enjoy watching and playing soccer.</p></li>
       </ul>`; 
   
     generatePage(leftHTMLString, rightHTMLString);
