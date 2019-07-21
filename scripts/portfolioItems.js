@@ -17,11 +17,11 @@ const PortfolioHolder = (function (){
       gif: 'img/Laconic-gif.gif',
       picture: 'img/Laconic.png',
       title: 'Laconic',
-      info: 'Manage, and A/B test your Youtube thumbnail videos to increase your click-through-rate. (Still under development)',
+      info: 'Manage, and A/B test your Youtube thumbnail videos to increase your click-through-rate.',
       id: 'laconic-project',
       tools:['react', 'node', 'express', 'postgresql', 'heroku', 'js'],
       url: 'https://laconic.now.sh/',
-      repo: 'https://github.com/thinkful-ei-cheetah/capstone3-client-GOATful'
+      repo: 'https://github.com/jamster10/capstone3-client-GOATful'
     },
     {
       gif: 'img/Markdown.gif',
