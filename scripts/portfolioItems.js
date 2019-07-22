@@ -17,7 +17,7 @@ const PortfolioHolder = (function (){
       gif: 'img/Laconic-gif.gif',
       picture: 'img/Laconic.png',
       title: 'Laconic',
-      info: 'Manage, and A/B test your Youtube thumbnail videos to increase your click-through-rate.',
+      info: 'Manage, and A/B test your Youtube video thumbnails to increase your click-through-rate.',
       id: 'laconic-project',
       tools:['react', 'node', 'express', 'postgresql', 'heroku', 'js'],
       url: 'https://laconic.now.sh/',
