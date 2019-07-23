@@ -28,3 +28,15 @@
   height: 50px;
 }
 
+@media (max-width:400px){
+  .logo-img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .lib-logo-container{
+    top: 20px;
+    margin-top: -50px;
+  }
+}
+
