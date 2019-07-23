@@ -1,6 +1,8 @@
 .me-container{
   margin:auto;
   text-align: left;
+  max-height: 430px;
+  overflow-y: scroll;
 }
 
 .myself{
@@ -29,7 +31,7 @@
     text-align: center;
     font-size: 1em;
   }
-  
+}
 
 @media (min-width:700px){
   .about-text{
