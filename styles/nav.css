@@ -35,8 +35,9 @@ nav{
     position: fixed;
     right: 10px;
     top: 60px;
-    padding: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
     border-right: 1px solid whitesmoke;
     transform: translate(0, -50vh);
     transition: transform .5s ease-in-out;
