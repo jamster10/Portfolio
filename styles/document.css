@@ -48,11 +48,13 @@ i{
   position: relative;
   transition: top 5s;
 }
+
 .show-panel{
   z-index: 2;
   background-color: rgba(0,0,0,.8);
   margin-top: 0px;
 }
+
 .button-holder{
   width: 30px;
   position: absolute;
@@ -62,7 +64,6 @@ i{
   transition: margin-top 2s, transform 2s;
   background-color:transparent;
   z-index: 5;
-
 }
 
 .button-holder > button{
@@ -85,7 +86,7 @@ i{
 
 @media (min-width: 500px){
   .button-holder{
-    left: 400px;
+    left: 380px;
   }
 
   .over-panel-text{
@@ -97,7 +98,17 @@ i{
 @media (max-width: 500px){
   .button-holder{
     left: 240px;
+  }
+}
+@media (max-width: 400px){
+  .over-panel-text{
+    width: 330px;
+  }
+}
 
+@media (max-width: 375px){
+  .button-holder{
+    left: 210px;
   }
 }
 
@@ -109,11 +120,11 @@ i{
     margin-left: auto;
     margin-right: auto;
   }
+
   .over-panel-text{
     margin-top: 200px;
     width: 600px;
   }
-
 }
 .preload * {
   -webkit-transition: none !important;

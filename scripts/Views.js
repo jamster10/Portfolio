@@ -67,7 +67,7 @@ const ViewGenerator = ( function(){
 
     let rightHTMLString =
     ` <p class="about-text">It started with a problem- <i>I'm lazy</i>. Why should I do a repetitive task when my efforts can be better utilized elsewhere?<br><br>
-    At my previous job I was a developer, but not for the web. We researched resources for our clients, and created and used diagnostics to better measure and understand how to help them improve. It was a tutoring firm, handling the data of thousands of students throughout Texas, yet some of our processes were archaic. Upon recognizing this, I took it upon myself to find a better way. I spent my evenings at home learning the ins and outs of JavaScript. Many frustrating late nights, and roadblocks, culminated in me presenting my company with a better way to analyze our students that they still use to this day. This spurred my hunger and excitement to become a professional programmer, which is where I am today.</p>
+    At my previous job I was a developer, but not for the web. We researched resources for our clients, and created and used diagnostics to better measure and understand how to help them improve. It was a tutoring firm, handling the data of thousands of students throughout Texas, yet some of our processes were archaic. Upon recognizing this, I took it upon myself to find a better way. I spent my evenings at home learning the ins and outs of JavaScript. Many frustrating late nights, and roadblocks, culminated in me presenting my company with a better way to analyze our students that they still use to this day. This spurred my hunger and excitement to become a professional programmer, which is what I am today.</p>
     `;
   
     generatePage(leftHTMLString, rightHTMLString);
