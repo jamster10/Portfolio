@@ -81,8 +81,8 @@ const ViewGenerator = ( function(){
     let leftHTMLString = 
     `<h2>${selection.title}</h2>
      <h3>${selection.info}</h3>
-     <a href='${selection.url}'>Visit Site</a>
-     <a href='${selection.repo}'>Visit Repo</a>
+     <a href='${selection.url}' target="_blank">Visit Site</a>
+     <a href='${selection.repo}' target="_blank">Visit Repo</a>
 
      `;
 

@@ -62,7 +62,7 @@ const State = (function(){
 
   //Enable CSS transitions after page load properly
   const enableTransitions=()=>{
-    let body = document.querySelector(`body`);
+    let body = document.querySelector('body');
     body.classList.remove('preload');
   };
 
@@ -98,6 +98,12 @@ const State = (function(){
       break;
     case 4:  ViewGenerator.aboutPage();
       break;
+    }
+    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (width < 890){
+      if (controller.showMenu){
+        State.toggleMenu(); 
+      }  
     }
   };
 

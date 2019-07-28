@@ -10,7 +10,7 @@ document.querySelector('.menu-button').onclick =(e)=>{
 document.querySelector('#panel-btn').onclick = (e) => {
   e.stopPropagation();
   State.togglePanel(); 
-}
+};
 
 //Allow navigation to home page when user clicks on my name
 document.querySelector('.name').onclick =(e)=>{
@@ -36,6 +36,15 @@ document.querySelector('#about-me').onclick =(e)=>{
   State.controller.pageView = 4;
   State.removeSelection();
   State.renderPage();
+};
+
+
+document.querySelector('.nav-links').onclick =(e)=>{
+  e.stopPropagation();
+  const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  if (width < 890){
+    State.toggleMenu();
+  }
 };
 
 //Unnesscary function maybe?
