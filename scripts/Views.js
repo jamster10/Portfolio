@@ -14,9 +14,9 @@ const ViewGenerator = ( function(){
     let leftHTMLString = 
     `<div class= "welcome-text">
       <h2>Hey There!</h2>
-      <p>I'm a full stack web developer located near Austin, Tx, and am excited to meet you!</p>
+      <p>I'm a full stack engineer located near Austin, Tx, and am excited to meet you!</p>
       <br>
-      <p>Drop me a line: via <a href = "mailto: kpac.ja@gmail.com">email</a></p>
+      <p>Drop me a line: via <a href = "mailto: kristofpierre8@gmail.com">email</a></p>
      </div>`
 
 
@@ -49,7 +49,6 @@ const ViewGenerator = ( function(){
 
     let rightHTMLString =
     ` <ul class="contact-list"> 
-        <li class="contact-item">Phone: <a href="tel:+1-540-308-1284">540-308-1284</a></li>
         <li class="contact-item">Email: <a href =mailto: kristofpierre8@gmail.com">kristofpierre8@gmail.com</a></li>
       </ul>`;
   
