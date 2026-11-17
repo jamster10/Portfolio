@@ -16,7 +16,7 @@ const ViewGenerator = ( function(){
       <h2>Hey There!</h2>
       <p>I'm a full stack engineer located near Austin, Tx, and am excited to meet you!</p>
       <br>
-      <p>Drop me a line: via <a href = "mailto: kristofpierre8@gmail.com">email</a></p>
+      <p>Drop me a line: via <a href = "mailto: kristofpierre@tutamail.com">email</a></p>
      </div>`
 
 
@@ -24,7 +24,8 @@ const ViewGenerator = ( function(){
      `<h3>Interesting facts about myself:</h3>
      
      <ul class ="fact-list">
-     <li class ="fact-item"><p>I designed and created an app using JS that my previous employer now uses to analyze their data and clients.</p></li>
+     <li class ="fact-item"><p>I built a video conference app that recorded interactions between students and teachers to discover how much eye contact and body language matters.</p></li>
+     <li class ="fact-item"><p>I designed and created an app that a previous employer now uses to analyze their data and clients.</p></li>
      <li class ="fact-item"><p>I once represented Jamaica in an international Chess tournament.</p></li>
      <li class ="fact-item"><p>I love to camp, cook, and crack open a beer- especially in that order.</p></li>
      <li class ="fact-item"><p>I enjoy watching and playing soccer.</p></li>
@@ -61,12 +62,10 @@ const ViewGenerator = ( function(){
     secondContainer.classList.add('about-right');
 
     let leftHTMLString = 
-    `<div class="me-container"><img class="myself" src="img/portfolio_picture.jpg" alt="A picture of myself"><p class="about-small-text">It started with a problem- <i>I'm lazy</i>. Why should I do a repetitive task when my efforts can be better utilized elsewhere?<br><br>
-    At a previous job I was a developer, but not for the web. We researched resources for our student clients, and created and used diagnostics to better measure and understand how to help them improve. It was a tutoring firm, handling the data of thousands of students throughout Texas, yet some of our processes were archaic. Upon recognizing this, I took it upon myself to find a better way. I spent my evenings at home learning the ins and outs of JavaScript. Many frustrating late nights, and roadblocks, culminated in me presenting my company with a better way to analyze our students that they still use to this day. This spurred my hunger and excitement to become a professional programmer, which is what I am today.</p></div>`;
-
+    `<div class="me-container"><img class="myself" src="img/portfolio_picture.jpg" alt="A picture of myself">`;
     let rightHTMLString =
     ` <p class="about-text">It started with a problem- <i>I'm lazy</i>. Why should I do a repetitive task when my efforts can be better utilized elsewhere?<br><br>
-    At my previous job I was a developer, but not for the web. We researched resources for our clients, and created and used diagnostics to better measure and understand how to help them improve. It was a tutoring firm, handling the data of thousands of students throughout Texas, yet some of our processes were archaic. Upon recognizing this, I took it upon myself to find a better way. I spent my evenings at home learning the ins and outs of JavaScript. Many frustrating late nights, and roadblocks, culminated in me presenting my company with a better way to analyze our students that they still use to this day. This spurred my hunger and excitement to become a professional programmer, which is what I am today.</p>
+    At a past job I was a developer, but not for the web. We researched resources for our clients, and created and used diagnostics to better measure and understand how to help them improve. It was a tutoring firm, handling the data of thousands of students throughout Texas, yet some of our processes were archaic. Upon recognizing this, I took it upon myself to find a better way. I spent my evenings at home learning the ins and outs of JavaScript. Many frustrating late nights, and roadblocks, culminated in me presenting my company with a better way to analyze our students that they still use to this day. This spurred my hunger and excitement to become a professional engineer, which is what I am today.</p>
     `;
   
     generatePage(leftHTMLString, rightHTMLString);
