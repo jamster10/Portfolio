@@ -14,7 +14,7 @@ const ViewGenerator = ( function(){
     let leftHTMLString = 
     `<div class= "welcome-text">
       <h2>Hey There!</h2>
-      <p>I'm a full stack engineer located near Austin, Tx, and am excited to meet you!</p>
+      <p>I'm a senior full stack engineer located near Austin, Tx, and am excited to meet you!</p>
       <br>
       <p>Drop me a line: via <a href = "mailto: kristofpierre@tutamail.com">email</a></p>
      </div>`
